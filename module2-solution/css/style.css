@@ -19,6 +19,7 @@ h1 {
 
 /* Section Styles */
 .section {
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid black;
   margin-bottom: 20px;
@@ -46,15 +47,15 @@ h1 {
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Add this line to distribute sections evenly */
   }
 
   .section {
-    width: calc(33.33% - 10px); /* Adjust width to accommodate margins */
-    margin-right: 20px; /* Add margin between sections */
+    width: 50%;
   }
+}
 
-  .section:last-child {
-    margin-right: 0; /* Remove right margin from the last section */
+@media (min-width: 992px) {
+  .section {
+    width: calc(100% / 3);
   }
 }
