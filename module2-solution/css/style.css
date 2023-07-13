@@ -1,61 +1,39 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: 32px;
-  text-align: center;
-}
-
-/* Section Styles */
-.section {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid black;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #e0e0e0; /* Gray background color */
-  position: relative;
-}
-
-.section-title {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #f44336; /* Example color, change to your preferred color */
-  color: white;
-  padding: 5px;
-  font-size: 25px;
-}
-
-.section-content {
-  margin-top: 40px;
-}
-
-/* Responsive Styles */
-@media (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .section {
-    width: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  .section {
-    width: calc(100% / 3);
-  }
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Page Heading</h1>
+  </header>
+  
+  <div class="container">
+    <section class="section">
+      <div class="section-title">Chicken</div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+    
+    <span class="comma">,</span>
+    
+    <section class="section">
+      <div class="section-title">Beef</div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+    
+    <span class="comma">,</span>
+    
+    <section class="section">
+      <div class="section-title">Sushi</div>
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
