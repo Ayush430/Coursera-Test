@@ -19,19 +19,19 @@ h1 {
 
 /* Section Styles */
 .section {
-  float: left;
-  width: 33.33%;
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid black;
   margin-bottom: 20px;
   padding: 20px;
+  background-color: #e0e0e0; /* Gray background color */
   position: relative;
 }
 
 .section-title {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #f44336; /* Example color, change to your preferred color */
   color: white;
   padding: 5px;
@@ -43,19 +43,19 @@ h1 {
 }
 
 /* Responsive Styles */
-@media (max-width: 991px) {
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .section {
     width: 50%;
   }
-  
-  .section:nth-child(3) {
-    clear: both;
-    width: 100%;
-  }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 992px) {
   .section {
-    width: 100%;
+    width: calc(100% / 3);
   }
 }
