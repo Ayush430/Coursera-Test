@@ -50,5 +50,22 @@ h1 {
   }
 
   .section {
+    width: calc(50% - 10px); /* Adjust width to accommodate margins */
+    margin-right: 20px; /* Add margin between sections */
+  }
+
+  .section:last-child {
+    margin-right: 0; /* Remove right margin from the last section */
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
     width: calc(33.33% - 10px); /* Adjust width to accommodate margins */
-    margin-right: 20px
+  }
+  
+  .section:nth-child(3) {
+    width: 100%; /* Set sushi section to cover 100% width */
+    margin-right: 0; /* Remove margin from sushi section */
+  }
+}
