@@ -59,9 +59,9 @@ h1 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .section {
-    width: calc(33.33% - 10px); /* Adjust width to accommodate margins */
+    width: calc(50% - 10px); /* Adjust width to accommodate margins */
   }
   
   .section:nth-child(3) {
